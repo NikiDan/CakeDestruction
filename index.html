@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TestTask</title>
     <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="clear.js" src="jquery.js"></script>
 </head>
     <body>
         <div class="main">
@@ -15,7 +16,7 @@
                     <button class="hideB hiclo"  name="hide"></button>
                     <span class="titleName"><span class="letter text">п</span>лан уничтожения пирожков</span>
             </div>
-            <div class="found">
+            <div class="found" id="found">
                 <div class="fields">
                     <div class="field1 field">
                         <label class="filling text"> Начинка:</label>
@@ -27,9 +28,9 @@
                     </div>
                     <div class="field3 field">
                         <label class="ehodus text"> Исход:</label>
-                        <input name="choice" class="choice center" type="text" value="Благоприятный, трансцендентальный" readonly>
+                        <input name="choice" class="choice center" id="choice" value="Благоприятный, трансцендентальный" readonly>
                         <button class="crops buttonColor centerButton" type="text" name="crops"></button>
-                        <button class="reset buttonColor centerButton" type="reset " name="reset1"></button>
+                        <button class="reset buttonColor centerButton" id = "reset" type="reset " name="reset" onclick="clean()" ></button>
                     </div>
                     <div class="field6">
                         <button class="cake feature textS buttonColor" type="text" name="cake">Добавить пирожок</button>
