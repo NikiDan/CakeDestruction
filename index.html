@@ -20,11 +20,11 @@
                 <div class="fields">
                     <div class="field1 field">
                         <label class="filling text"> Начинка:</label>
-                        <input type="text" name="inside1" class="input1 inputs center" placeholder="Введите значение...">
+                        <input type="text" id="input1" class="input1 inputs center" placeholder="Введите значение...">
                     </div>
                     <div class="field2 field">
                         <label class="factor text"> Форм-фактор:</label>
-                        <input type="text" name="inside2" class="input2 inputs center" value="Моноблок">
+                        <input type="text" id="monoblock" name="inside2" class="input2 inputs center" value="Моноблок">
                     </div>
                     <div class="field3 field">
                         <label class="ehodus text"> Исход:</label>
@@ -44,7 +44,7 @@
                 <div class="basement" id="basement">
                     <div class="bass_fields">
                         <button class="man textS buttonColor" type="button" name="man" >Передать человеку в красном</button>
-                        <button class="cancel comcan" id="cancel" name="cancel" onclick="cancel()">Отмена</button>
+                        <button class="cancel comcan" id="cancel" name="cancel" onclick="reset()">Отмена</button>
                         <button class="complete comcan" type="text" name="complete">Выполнить</button>
                     </div>
                     <div class="corner">
