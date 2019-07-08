@@ -16,11 +16,11 @@ body{
     margin: 2px 0px 2px 2px;
     height: 21px;
 }
-.hideB{
+.hide{
     width: 17px;
     float: right;
 }
-.hideB::before {
+.hide::before {
     display: block;
     content: " ";
     background: url("img/hide.png");
@@ -29,11 +29,11 @@ body{
     height: 14px;
     width: 14px;
 }
-.closeB{
+.close{
     float: right;
     width: 16px;
 }
-.closeB::before {
+.close::before {
     display: block;
     content: " ";
     background: url("img/close.png");
@@ -42,7 +42,7 @@ body{
     height: 14px;
     width: 14px;
 }
-.titleName{
+.title-name{
     font-family: 'Tahoma', sans-serif;
     font-size: 12px;
     letter-spacing: -0.5px ;
@@ -66,31 +66,31 @@ body{
     letter-spacing: -0.48px;
     display: inline-block;
 }
-.ehodus{
+.exodus{
     display: inline-block;
     margin: 0 0 0 80px;
     position: relative;
     bottom: 1px;
 }
-.fields{
+.found-field{
     width: 100%;
     margin: 10px 0;
 }
-.input1{
+.input-form-up{
     margin: 0 0 0 2px;
     padding: 0 2px 0 2px;
 }
-.input1::-webkit-input-placeholder{
+.input-form-up::-webkit-input-placeholder{
     font-style: italic;
     font-family: 'Tahoma', sans-serif;
     font-size: 12px;
     opacity: 0.4;
 }
-.input2{
+.input-form-midle{
     margin: 0px 0px 0px 1px;
     padding: 0 0 0 4px;
 }
-.choice{
+.input-form-down{
     width: 360px;
     background-color: #efeefb;
     -webkit-appearance: none;
@@ -124,7 +124,7 @@ body{
     height: 14px;
     width: 14px;
 }
-.field6{
+.cake-jame-print-btn{
     text-align: center;
 }
 .cake {
@@ -224,11 +224,11 @@ body{
     font-family: 'Tahoa', sans-serif;
     font-size: 12px;
 }
-.textS {
+.text-size {
     font-family: 'Tahoa', sans-serif;
     font-size: 11px;
 }
-.comcan {
+.footer-btn {
     font-family: 'Tahoma', sans-serif;
     font-size: 14px;
     background-color: #6e71ac;
@@ -241,14 +241,14 @@ body{
     border: 1px solid #a2a2c1;
     background: linear-gradient(180deg, #FFF, #d2ccea );
 }
-.hiclo {
+.cap-btn {
     background: linear-gradient(180deg, #FFF, #d2ccea );
     height: 14px;
     border: 0px;
     padding: 0px 0px 3px 0;
     margin: 3px 3px 0px 0px;
 }
-.inputs {
+.input {
     box-shadow: inset 0px 2px 2px #f3f2fc;
     width: 73%;
 }
