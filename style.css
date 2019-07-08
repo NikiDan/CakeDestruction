@@ -1,19 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
 .main{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
     border: 1px solid #a2a2c1;
     background-color: #efeefb;
-    height: 185px;
     width: 537px;
-    margin: auto;
 }
 .cap {
     background-color: #6e71ac;
     width: 99.2%;
-    margin: 2px 0px 0px 2px;
+    margin: 2px 0px 2px 2px;
     height: 21px;
 }
 .hideB{

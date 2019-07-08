@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TestTask</title>
     <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="clear.js" src="jquery.js"></script>
 </head>
     <body>
-        <div class="main">
+        <div class="main" id="main">
             <div class="cap">
                     <button class="closeB hiclo" type="text" name="close"></button>
-                    <button class="hideB hiclo" onclick="hide()" onclick="show()"  name="hide"></button>
+                    <button class="hideB hiclo" name="hide"></button>
                     <span class="titleName"><span class="letter text">п</span>лан уничтожения пирожков</span>
             </div>
+            <div class="content">
             <div class="found" id="found">
                 <div class="fields">
                     <div class="field1 field">
@@ -41,10 +41,10 @@
                 </div>
                     <hr class="line">
             <footer>
-                <div class="basement">
+                <div class="basement" id="basement">
                     <div class="bass_fields">
                         <button class="man textS buttonColor" type="button" name="man" >Передать человеку в красном</button>
-                        <button class="cancel comcan" type="text" name="cancel">Отмена</button>
+                        <button class="cancel comcan" id="cancel" name="cancel" onclick="cancel()">Отмена</button>
                         <button class="complete comcan" type="text" name="complete">Выполнить</button>
                     </div>
                     <div class="corner">
@@ -53,5 +53,8 @@
             </footer>
             </div>
         </div>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="clear.js" ></script>
     </body>
+</div>
 </html>

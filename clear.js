@@ -1,12 +1,18 @@
-function clean() {
-    document.getElementById('choice').value = ''
- }
+$(document).ready(function () {
+    $( ".hideB" ).click(function(){
+        $( ".content" ).slideToggle();
+    });
+});
 
-function hide() {
-    var x = document.getElementById("found");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+function clean() {
+    document.getElementById('choice').value = '';
+ }
+function cancel () {
+    var y = document.execCommand("undo");
+    // var x = document.getElementById("found");
+    // if (x.style.display === "block") {
+    //     x.style.display = "none";
+    // } else {
+    //     x.style.display = "block";
+    // }
 }
