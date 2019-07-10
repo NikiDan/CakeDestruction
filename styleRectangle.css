@@ -3,14 +3,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
 }
-.main{
+.main-rectangle{
     border: 1px solid #a2a2c1;
     background-color: #efeefb;
     width: 537px;
 }
-.cap {
+.cap-rectangle {
     background-color: #6e71ac;
     width: 99.2%;
     margin: 2px 0px 2px 2px;
@@ -42,61 +42,55 @@ body{
     height: 14px;
     width: 14px;
 }
-.title-name{
-    font-family: 'Tahoma', sans-serif;
-    font-size: 12px;
-    letter-spacing: -0.5px ;
-    padding: 3px 0 0 5px;
-    font-weight: 600;
-    color: #fff;
-}
 .letter{
     text-transform: uppercase;
 }
-.found{
+.found-rectangle{
     margin: 10px 0px 0 0;
 }
 .filling{
     display: inline-block;
-    margin: 0 0 0 68px;
     letter-spacing: -0.4px;
 }
-.factor{
+.filling-rectangle{
+    margin: 0 0 0 68px;
+}
+.factor-rectangle{
     padding: 0 0 0 43px;
     letter-spacing: -0.48px;
     display: inline-block;
 }
-.exodus{
+.exodus-rectangle{
     display: inline-block;
     margin: 0 0 0 80px;
     position: relative;
     bottom: 1px;
 }
-.found-field{
+.found-field-rectangle{
     width: 100%;
     margin: 10px 0;
 }
-.input-form-up{
+.input-form-up-rectangle{
     margin: 0 0 0 2px;
     padding: 0 2px 0 2px;
 }
-.input-form-up::-webkit-input-placeholder{
+.input-form-up-rectangle::-webkit-input-placeholder{
     font-style: italic;
     font-family: 'Tahoma', sans-serif;
     font-size: 12px;
     opacity: 0.4;
 }
-.input-form-midle{
+.input-form-midle-rectangle{
     margin: 0px 0px 0px 1px;
     padding: 0 0 0 4px;
 }
-.input-form-down{
+.input-form-down-rectangle{
     width: 360px;
     background-color: #efeefb;
     -webkit-appearance: none;
     padding: 0 0 0 4px;
 }
-.reset{
+.reset-rectangle{
     position: relative;
     bottom: 21px;
     right: 34px;
@@ -111,7 +105,7 @@ body{
     width: 14px;
     margin: 4px 0px 0px -4px;
 }
-.crops {
+.crops-rectangle{
     margin: 0 18px 0 0px;
     padding: 0px 0px 0px 2.6px;
 }
@@ -213,7 +207,7 @@ body{
 .corner:hover{
     cursor: se-resize;
 }
-.field {
+.field-rectangle {
     margin-bottom: 6px;
 }
 .feature{
@@ -262,4 +256,99 @@ body{
     width: 18px;
     height: 21px;
     border: 1px solid #8b8bae;
+}
+.main-square{
+    border: 1px solid #a2a2c1;
+    background-color: #e1b19b;
+    width: 350px;
+    height: 350px;
+    margin: 0 0 0 50px;
+    width: 185px;
+    height: 185px;
+}
+.cap-square{
+    background-color: #ac6e6e;
+    width: 98%;
+    margin: 2px 0px 2px 2px;
+    height: 21px;
+}
+.title-span{
+    font-family: 'Tahoma', sans-serif;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    padding: 3px 0 0 5px;
+    font-weight: 600;
+    color: #fff;
+}
+.field-square {
+    margin-bottom: 3px;
+}
+
+.found-field-square{
+    width: 100%;
+    margin: 6px 0;
+}
+.label-square{
+    margin: 0 0 0 3px;
+}
+.confirm{
+    display: none;
+}
+
+.confirm.modal{
+    background-color: #efeefb;
+    border-radius: 0;
+}
+.modal-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.no{
+    margin: 0 0 0 15px;
+}
+.confirm-text{
+    text-align: center;
+}
+.modal-btn-style{
+    padding: 0 0 1px 0;
+    width: 46px;
+    height: 20px;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+    background-color: #6e71ac;
+    border: 1px solid #9494c8;
+    color: #fff;
+}
+.modal-text{
+    text-decoration: none;
+    font-family: 'Tahoma', sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+.modal-main-text{
+    font-weight: 600;
+}
+.modal-title{
+    margin: 0 0 0 0;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    padding: 0px 0px 0 5px;
+}
+.modal-header{
+    background-color: #6e71ac;
+    width: 112.9%;
+    margin: -13px 0 0 -28.3px;
+    border-radius: 0;
+    height: 17px;
+    padding: 0 0 2px 0;
+}
+.modal-close-btn{
+    margin: 2.5px 2px 0 0;
+    border-radius: 0;
+}
+.modal-link{
+    text-decoration: none;
+    color: #fff;
 }
