@@ -16,11 +16,11 @@ body{
     margin: 2px 0px 2px 2px;
     height: 21px;
 }
-.hide{
+.hide-content{
     width: 17px;
     float: right;
 }
-.hide::before {
+.hide-content::before {
     display: block;
     content: " ";
     background: url("img/hide.png");
@@ -260,11 +260,9 @@ body{
 .main-square{
     border: 1px solid #a2a2c1;
     background-color: #e1b19b;
-    width: 350px;
-    height: 350px;
+    width: 165px;
+    height: auto;
     margin: 0 0 0 50px;
-    width: 185px;
-    height: 185px;
 }
 .cap-square{
     background-color: #ac6e6e;
@@ -351,4 +349,18 @@ body{
 .modal-link{
     text-decoration: none;
     color: #fff;
+}
+.reset-square{
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+    background-color: #ac6e6e;
+    height: 22px;
+    border: 1px solid #9494c8;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+.square-btn{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }

@@ -12,13 +12,13 @@
 
 </head>
     <body>
-        <div class="main-rectangle"id="main">
-            <div class="cap-rectangle">
+        <div class="main-rectangle main"id="main">
+            <div class="cap-rectangle cap">
                     <button class="close cap-btn" type="text"></button>
-                    <button class="hide cap-btn hide-rectangle"></button>
+                    <button class="hide-content cap-btn hide-rectangle" id="hide"></button>
                     <span class="title-name-rectangle title-span"><span class="letter text">п</span>лан уничтожения пирожков</span>
             </div>
-            <div class="content-rectangle content">
+            <div class="content-rectangle content" id="content-rectangle">
             <div class="found-rectangle found" id="found-rectangle">
                 <div class="found-field-rectangle found-field">
                     <div class="field-rectangle field">
@@ -33,7 +33,7 @@
                         <label class="exodus-rectangle text"> Исход:</label>
                         <input class="input-form-down-rectangle center" id="input-form-down-rectangle" value="Благоприятный, трансцендентальный" readonly>
                         <button class="crops-rectangle buttonColor centerButton crops" type="text"></button>
-                        <button class="reset-rectangle buttonColor centerButton reset" id = "reset" type="reset " onclick="clean()" ></button>
+                        <button class="reset-rectangle buttonColor centerButton reset" id = "reset" type="reset " onclick="cleanRectangle()" ></button>
                     </div>
                     <div class="cake-jame-print-btn">
                         <button class="cake feature text-size buttonColor" type="text">Добавить пирожок</button>
@@ -75,7 +75,7 @@
                 </p>
                 <div class="modal-btn">
                     <a rel="modal:close" id="yes">
-                        <button class="yes modal-btn-style" id="yes" onclick="reset()">Да</button>
+                        <button class="yes modal-btn-style" id="yes" onclick="resetRectangle()">Да</button>
                     </a>
                     <a rel="modal:close" id="no">
                         <button class="no modal-btn-style" id="no">Нет</button>
@@ -83,14 +83,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="main-square">
-            <div class="cap-square">
+        <div class="main-square main">
+            <div class="cap-square cap">
                 <button class="close cap-btn" type="text"></button>
-                <button class="hide cap-btn"></button>
+                <button class="hide-content cap-btn "></button>
                 <span class="title-name-square title-span"><span class="letter text">Ч</span>еловек в красном</span>
             </div>
-                <div class="content-square content">
+                <div class="content-square content" id="content-square">
                     <div class="found-square found" id="found-square">
                         <div class="found-field-square found-field">
                             <div class="field-square field">
@@ -105,6 +104,9 @@
                                 <label class="exodus-square text label-square"> Исход:</label>
                                 <span class="exodus-field-square text" id="exodus-field-square">
                             </div>
+                        </div>
+                        <div class="square-btn">
+                        <button class="reset-square" id = "reset-square" type="reset" onclick="cleanSquare()">Очистить</button>
                         </div>
                     </div>
                 </div>
