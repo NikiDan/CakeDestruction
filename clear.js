@@ -4,12 +4,19 @@ $(document).ready(function () {
 
         $(this).closest(".cap").siblings(".content").slideToggle();
 
-        // if ($(this).hasClass("hide-rectangle")) {
-        //     $(".content-rectangle").slideToggle();
-        // } else {
-        //     $(".content-square").slideToggle();
-        // }
     });
+
+    $(".close").click(function (){
+
+        $(this).closest(".cap").parent().css('display','none');
+
+    });
+
+    $("#crops").click(function () {
+
+        $("#select-file").click();
+
+    })
 });
 
 function cleanRectangle() {
@@ -29,9 +36,11 @@ function resetRectangle() {
         fillingInput.value = arr[0];
         formFactor.value= arr[1];
         exodusField.value = arr[2];
+        document.getElementById('confirm').display="none";
      }
      else {
         document.getElementById('no');
+        document.getElementById('confirm').display="none";
      }
 }
 function transfer() {

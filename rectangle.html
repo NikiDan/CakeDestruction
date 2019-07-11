@@ -14,7 +14,7 @@
     <body>
         <div class="main-rectangle main"id="main">
             <div class="cap-rectangle cap">
-                    <button class="close cap-btn" type="text"></button>
+                    <button class="close cap-btn" type="text" id="close"></button>
                     <button class="hide-content cap-btn hide-rectangle" id="hide"></button>
                     <span class="title-name-rectangle title-span"><span class="letter text">п</span>лан уничтожения пирожков</span>
             </div>
@@ -32,7 +32,8 @@
                     <div class="field-rectangle field">
                         <label class="exodus-rectangle text"> Исход:</label>
                         <input class="input-form-down-rectangle center" id="input-form-down-rectangle" value="Благоприятный, трансцендентальный" readonly>
-                        <button class="crops-rectangle buttonColor centerButton crops" type="text"></button>
+                        <button class="crops-rectangle buttonColor centerButton crops" type="text" id="crops"></button>
+                        <input class="select-file" type="file" id="select-file">
                         <button class="reset-rectangle buttonColor centerButton reset" id = "reset" type="reset " onclick="cleanRectangle()" ></button>
                     </div>
                     <div class="cake-jame-print-btn">
@@ -110,6 +111,10 @@
                         </div>
                     </div>
                 </div>
+        </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Nigga!</h1>
+            </div>
         <script src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="clear.js" ></script>
             <!-- jQuery Modal -->
