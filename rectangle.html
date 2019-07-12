@@ -33,7 +33,7 @@
                         <label class="exodus-rectangle text"> Исход:</label>
                         <input class="input-form-down-rectangle center" id="input-form-down-rectangle" value="Благоприятный, трансцендентальный" readonly>
                         <button class="crops-rectangle buttonColor centerButton crops" type="text" id="crops"></button>
-                        <input class="select-file" type="file" id="select-file">
+                        <input class="select-file" type="file" id="select-file" accept="image/jpeg, image/png, image/jpg" multiple onchange="transferData()">
                         <button class="reset-rectangle buttonColor centerButton reset" id = "reset" type="reset " onclick="cleanRectangle()" ></button>
                     </div>
                     <div class="cake-jame-print-btn">
@@ -49,8 +49,8 @@
                     <div class="basement-btn">
                         <button class="man text-size buttonColor" type="button" onclick="transfer()">Передать человеку в красном</button>
                         <!-- Link to open the modal -->
-                        <button class="cancel footer-btn" id="cancel" name="cancel">
-                            <a href="#confirm" rel="modal:open" class="modal-link">Отмена</a>
+                        <button class="cancel footer-btn" id="cancel" name="cancel" onclick="openModal()">Отмена
+                            <!--<a href="#confirm" rel="modal:open" class="modal-link">Отмена</a>-->
                         </button>
                         <button class="complete footer-btn" type="text">Выполнить</button>
                     </div>
@@ -60,14 +60,14 @@
             </footer>
             </div>
         </div>
-
+    <div class="modal-window" id="modal">
         <div id="confirm" class="confirm">
             <div class="modal-header">
                 <a href="#" class="modal-text">
                     <h3 class = "modal-title modal-text">Хорошенько подумайте</h3>
-                    <a rel="modal:close" id="modal-close-btn">
-                        <button class="close cap-btn modal-close-btn" type="text"></button>
-                    </a>
+                    <!--<a rel="modal:close" id="modal-close-btn">-->
+                        <button class="close cap-btn modal-close-btn" type="text" id="close-modal" onclick="closeModal()"></button>
+                    <!--</a>-->
                 </a>
             </div>
             <div class="modal-content">
@@ -75,15 +75,16 @@
                     <a href="#" class="modal-text modal-main-text">Вы уверены, что хотите совершить это действие ?</a>
                 </p>
                 <div class="modal-btn">
-                    <a rel="modal:close" id="yes">
+                    <!--<a rel="modal:close" id="yes">-->
                         <button class="yes modal-btn-style" id="yes" onclick="resetRectangle()">Да</button>
-                    </a>
-                    <a rel="modal:close" id="no">
-                        <button class="no modal-btn-style" id="no">Нет</button>
-                    </a>
+                    <!--</a>-->
+                    <!--<a rel="modal:close" id="no">-->
+                        <button class="no modal-btn-style" id="no" onclick="closeModal()">Нет</button>
+                    <!--</a>-->
                 </div>
             </div>
         </div>
+    </div>
         <div class="main-square main">
             <div class="cap-square cap">
                 <button class="close cap-btn" type="text"></button>
@@ -113,7 +114,7 @@
                 </div>
         </div>
             <div class="overlay-panel overlay-right">
-                <h1>Hello, Nigga!</h1>
+                <p id = "data-file" class="data-file"></p>
             </div>
         <script src="jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="clear.js" ></script>
