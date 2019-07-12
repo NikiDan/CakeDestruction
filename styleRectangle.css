@@ -388,8 +388,8 @@ body{
     color: #FFFFFF;
     border-radius: 20px;
     margin: 0 0 0 50px;
-    width: 250px;
-    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
 }
 .modal-window{
     position: fixed;
@@ -402,4 +402,7 @@ body{
     animation-name: animatetop;
     animation-duration: 0.4s;
     background-color: #fff;
+}
+.data-file{
+    padding: 0 0px 0 20px;
 }

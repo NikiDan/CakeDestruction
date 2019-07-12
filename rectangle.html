@@ -50,7 +50,6 @@
                         <button class="man text-size buttonColor" type="button" onclick="transfer()">Передать человеку в красном</button>
                         <!-- Link to open the modal -->
                         <button class="cancel footer-btn" id="cancel" name="cancel" onclick="openModal()">Отмена
-                            <!--<a href="#confirm" rel="modal:open" class="modal-link">Отмена</a>-->
                         </button>
                         <button class="complete footer-btn" type="text">Выполнить</button>
                     </div>
@@ -65,9 +64,7 @@
             <div class="modal-header">
                 <a href="#" class="modal-text">
                     <h3 class = "modal-title modal-text">Хорошенько подумайте</h3>
-                    <!--<a rel="modal:close" id="modal-close-btn">-->
                         <button class="close cap-btn modal-close-btn" type="text" id="close-modal" onclick="closeModal()"></button>
-                    <!--</a>-->
                 </a>
             </div>
             <div class="modal-content">
@@ -75,12 +72,8 @@
                     <a href="#" class="modal-text modal-main-text">Вы уверены, что хотите совершить это действие ?</a>
                 </p>
                 <div class="modal-btn">
-                    <!--<a rel="modal:close" id="yes">-->
                         <button class="yes modal-btn-style" id="yes" onclick="resetRectangle()">Да</button>
-                    <!--</a>-->
-                    <!--<a rel="modal:close" id="no">-->
                         <button class="no modal-btn-style" id="no" onclick="closeModal()">Нет</button>
-                    <!--</a>-->
                 </div>
             </div>
         </div>
@@ -113,7 +106,7 @@
                     </div>
                 </div>
         </div>
-            <div class="overlay-panel overlay-right">
+            <div class="overlay-panel overlay-right" id="overlay-panel">
                 <p id = "data-file" class="data-file"></p>
             </div>
         <script src="jquery-3.4.1.min.js"></script>

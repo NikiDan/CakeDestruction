@@ -16,8 +16,12 @@ $(document).ready(function () {
 
         $("#select-file").click();
 
-    })
-
+    });
+    $(".data-file-string ").draggable({
+        drag: function (event, ui) {
+            ui.position.left = x;
+            ui.position.top = y;
+        }});
 });
 
 function cleanRectangle() {
@@ -74,7 +78,7 @@ function transferData() {
             text = "Вам необходимо выбрать хотя бы один файл !";
         }   else{
             for (var i=0; i<data.files.length; i++){
-                text +="<br><strong>" + (i+1) + " .files</strong><br>";
+                text +="<br id='data-file-string'><strong>" + (i+1) + " .files</strong><br>";
                 var file = data.files[i];
                 if('name' in file){
                     text += "name: " + file.name + "<br>";
